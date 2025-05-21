@@ -13,8 +13,6 @@
 html {
     background-image: url(../images/fondo2.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* body */
@@ -40,7 +38,11 @@ header {
     height: 100px;
     width: 200px;
 }
-
+.contador{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 /* nav */
 nav ul {
     list-style: none;
@@ -164,60 +166,7 @@ footer {
      transition: 0.5s;
 }
 
-/* media tablet */
-@media (max-width: 768px) {
-     html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-      main {
-        flex: 1;
-        padding: 30px 20px;
-    }
-    .menu {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-        display: none;
-
-    }
-
-    nav.activo ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .fotos {
-        display: flex;
-        flex-direction: column;
-
-    }
-     footer {
-       background-color: dimgrey;
-        padding: 10px;
-        color: white;
-        text-align: center;
-        font-size: 14px;
-        display: inline-block;
-        align-items: center;
-        margin-top: 700px;
-    }
-    .imagen4{
-        display: flex;
-        flex-direction: column;
-    }
-}
-/* media movil */
+/* movil */
 @media screen and (max-width: 576px) {
     html, body {
         height: 100%;
@@ -228,13 +177,12 @@ footer {
         display: flex;
         flex-direction: column;
         justify-items: center;
-        
+        display: none;
         margin-right: 100px;
         
     }
      .imagen4 img{
-        display: flex;
-        flex-direction: column;
+        
         width: 400px;
         height: 350px;
         justify-items: center;
@@ -283,6 +231,10 @@ footer {
         gap: 20px;
         justify-content: center;
         height: 150px;
+        flex: 1;
+        
+    }
+    .fotos{
         flex: 1;
     }
 

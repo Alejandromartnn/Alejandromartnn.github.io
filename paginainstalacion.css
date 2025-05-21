@@ -10,7 +10,7 @@ body {
 
 /* Nav  */
 nav {
-    background-color: navy; /* azul oscuro */
+    background-color: navy; 
     padding: 20px ;
     border-radius: 6px;
     margin-bottom: 30px;
@@ -26,7 +26,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: lightblue; /* azul claro */
+    color: lightblue; 
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -58,7 +58,7 @@ nav ul li a:hover{
     transition: 0.6s;
 }
 
-/* Secciones */
+/* Seccion */
 
 .seccion {
     margin-bottom: 30px;
@@ -254,8 +254,8 @@ nav ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    margin-left: 0; 
+    gap: 90px;
+    margin-left: 40px; 
     margin-top: 20px;
 }
 
@@ -272,7 +272,6 @@ nav ul li a:hover{
     gap: 40px;
 }
 
-/* Texto */
 .texto {
     max-width: 55%;
 }
