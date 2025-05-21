@@ -13,7 +13,10 @@
     <header>
         <h1>Sistemas de Gestión Empresarial</h1>
         <nav>
-            <ul>
+             <div class="boton-menu">
+                <button onclick="mostrarMenu()">☰ Mostrar menú</button>
+            </div>
+            <ul class="menu">
                 <li><a href="./index.html">Página Principal</a></li>
                 <li><a href="#Definición">Definición</a></li>
                 <li><a href="#tipos">Tipos</a></li>
@@ -50,7 +53,7 @@
                         el flujo de datos entre ellos.</p>
                 </div>
                 <div class="imagen">
-                    <img src="./images/odoo.jpg" alt="Sistema ERP" class="fotomain" />
+                    <img src="./images/odoo.jpg" alt=" ERP" class="fotomain" />
                 </div>
             </div>
 
@@ -65,7 +68,7 @@
                         ERP, abarcando una funcionalidad más amplia.</p>
                 </div>
                 <div class="imagen">
-                    <img src="./images/hubspot.jpg" alt="Sistema CRM" class="fotomain" />
+                    <img src="./images/hubspot.jpg" alt=" CRM" class="fotomain" />
                 </div>
             </div>
 
@@ -78,7 +81,7 @@
                         un mayor nivel de automatización en la gestión de sus almacenes.</p>
                 </div>
                 <div class="imagen">
-                    <img src="./images/easy.jpg" alt="Sistema SGA" class="fotomain" />
+                    <img src="./images/easy.jpg" alt=" SGA" class="fotomain" />
                 </div>
             </div>
 
@@ -95,14 +98,14 @@
                         como para el análisis de la información (B.I.).</p>
                 </div>
                 <div class="imagen">
-                    <img src="./images/powerbi.jpg" alt="Sistema BI" class="fotomain" />
+                    <img src="./images/powerbi.jpg" alt=" BI" class="fotomain" />
                 </div>
             </div>
         </section>
 
         <section id="ventajas">
             <h2>Ventajas de Implementar un SGE</h2>
-            <video src="./videos/videos1.mp4" autoplay muted loop height="600px" width="950px"></video>
+            <video src="./videos/videos1.mp4" autoplay muted loop height="600px" width="950px" class="video93"></video>
         </section>
 
 
@@ -122,6 +125,12 @@
             </a>
         </div>
     </footer>
+    <script>
+         function mostrarMenu() {
+            let menu = document.querySelector(".menu");
+            menu.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>

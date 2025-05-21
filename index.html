@@ -9,22 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/624bf31245.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="paginageneral.css" />
+    <link rel="stylesheet" href="./css/paginageneral.css" />
 </head>
 
 <body>
     <header>
-        <div><img src="logo.png" class="logo" alt=""></div>
+        <div><img src="./images/logo.png" class="logo" alt="">
+             <div id="contador" class="contador">Clics dados en la página: 0</div>
+        </div>
         <nav>
             <div class="boton-menu">
                 <button onclick="mostrarMenu()">☰ Mostrar menú</button>
             </div>
+             
+
             <ul class="menu">
-                <li><a href="https://github.com/alejandro574/Paginasge.git">VER EN GITHUB</a></li>
+                <li><a href="https://alejandromartnn.github.io/" target="_blank">VER EN GITHUB</a></li>
                 <li><a href="./paginacontipos.html">Tipos y características</a></li>
                 <li><a href="./paginainstalación.html">Instalación</a></li>
                 <li><a href="./configyseguridad.html">Configuración y Seguridad</a></li>
-                <li><a href="informes.html">Informes y Exportación</a></li>
+                <li><a href="./impoexpo.html">Informes y Exportación</a></li>
             </ul>
         </nav>
     </header>
@@ -53,7 +57,7 @@
                     <img src="./images/seguridad.jpg" alt="foto" class="foto4" />
                     <h3>Mecanismos de acceso seguro a la información. Roles y privilegios</h3>
                 </a>
-                <a href="informes.html" class="fotos3">
+                <a href="./impoexpo.html" class="fotos3">
                     <img src="./images/informes.jpg" alt="foto" class="foto4" />
                     <h3>Elaboración de informes <br> Exportación de información </h3>
                 </a>
@@ -86,6 +90,11 @@
             let menu = document.querySelector(".menu");
             menu.classList.toggle("show");
         }
+        let contador = 0;
+       document.addEventListener('click', () => {
+    contador++;
+    document.getElementById('contador').textContent = `Clics: ${contador}`;
+  });
     </script>
 </body>
 
