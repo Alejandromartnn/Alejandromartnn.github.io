@@ -1,7 +1,7 @@
 /* body  */
 body {
    font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, lightblue, white);
+    background: aqua;
     color: black;
     margin: 0;
     padding: 20px;
@@ -310,16 +310,3 @@ footer a:hover {
     transition: 0.5s;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
-    .fila {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-}
