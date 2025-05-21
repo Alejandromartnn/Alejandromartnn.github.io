@@ -4,31 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistemas de Gestión Empresarial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/624bf31245.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/paginageneral.css" />
+    <link rel="stylesheet" href="paginageneral.css" />
 </head>
 
 <body>
     <header>
-        <div><img src="./images/logo.png" class="logo" alt="">
+        <div><img src="logo.png" class="logo" alt="">
              <div id="contador" class="contador">Clics dados en la página: 0</div>
         </div>
         <nav>
             <div class="boton-menu">
                 <button onclick="mostrarMenu()">☰ Mostrar menú</button>
             </div>
-             
-
             <ul class="menu">
                 <li><a href="https://alejandromartnn.github.io/" target="_blank">VER EN GITHUB</a></li>
-                <li><a href="./paginacontipos.html">Tipos y características</a></li>
-                <li><a href="./paginainstalación.html">Instalación</a></li>
-                <li><a href="./configyseguridad.html">Configuración y Seguridad</a></li>
-                <li><a href="./impoexpo.html">Informes y Exportación</a></li>
+                <li><a href="paginacontipos.html">Tipos y características</a></li>
+                <li><a href="paginainstalación.html">Instalación</a></li>
+                <li><a href="configyseguridad.html">Configuración y Seguridad</a></li>
+                <li><a href="impoexpo.html">Informes y Exportación</a></li>
             </ul>
         </nav>
     </header>
@@ -41,32 +34,31 @@
         </section>
         <section class="fotos">
             <div class="fotos2">
-                <a href="./paginacontipos.html" class="fotos3">
-                    <img src="./images/tiposprincipal.jpg" alt="foto" class="foto4" />
+                <a href="paginacontipos.html" class="fotos3">
+                    <img src="tiposprincipal.jpg" alt="foto" class="foto4" />
                     <h3>Tipos y características</h3>
                 </a>
-                <a href="./paginainstalación.html" class="fotos3">
-                    <img src="./images/dolibarr.png" alt="foto" class="foto4" />
+                <a href="paginainstalación.html" class="fotos3">
+                    <img src="dolibarr.png" alt="foto" class="foto4" />
                     <h3>Instalación</h3>
                 </a>
-                <a href="./configyseguridad.html" class="fotos3">
-                    <img src="./images/configuracion.jpg" alt="foto" class="foto4" />
+                <a href="configyseguridad.html" class="fotos3">
+                    <img src="configuracion.jpg" alt="foto" class="foto4" />
                     <h3>Administración y configuración</h3>
                 </a>
-                <a href="./configyseguridad.html#acceso-seguro" class="fotos3">
-                    <img src="./images/seguridad.jpg" alt="foto" class="foto4" />
+                <a href="configyseguridad.html#acceso-seguro" class="fotos3">
+                    <img src="seguridad.jpg" alt="foto" class="foto4" />
                     <h3>Mecanismos de acceso seguro a la información. Roles y privilegios</h3>
                 </a>
-                <a href="./impoexpo.html" class="fotos3">
-                    <img src="./images/informes.jpg" alt="foto" class="foto4" />
+                <a href="impoexpo.html" class="fotos3">
+                    <img src="informes.jpg" alt="foto" class="foto4" />
                     <h3>Elaboración de informes <br> Exportación de información </h3>
                 </a>
-
             </div>
         </section>
         <div class="imagen4">
-            <img src="./images/1684342337684.png" alt="s" >
-            <img src="./images/¿Qué-es-un-sistema-de-gestión-y-para-qué-sirve (1).jpg" alt="a">
+            <img src="1684342337684.png" alt="s" >
+            <img src="¿Qué-es-un-sistema-de-gestión-y-para-qué-sirve (1).jpg" alt="a">
         </div>
     </main>
 
@@ -91,11 +83,10 @@
             menu.classList.toggle("show");
         }
         let contador = 0;
-       document.addEventListener('click', () => {
-    contador++;
-    document.getElementById('contador').textContent = `Clics: ${contador}`;
-  });
+        document.addEventListener('click', () => {
+            contador++;
+            document.getElementById('contador').textContent = `Clics: ${contador}`;
+        });
     </script>
 </body>
-
 </html>
