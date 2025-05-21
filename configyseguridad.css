@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url(../images/fondo2.jpg);
+  background-image: url(fondo2.jpg);
   color: black;
   margin: 0;
    padding: 20px 20px 0 20px;
@@ -17,7 +17,7 @@ body {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-  background-image:url(../images/fondoclaro.jpg) ;
+  background-image:url(fondoclaro.jpg) ;
   padding: 30px 30px;
   border-radius: 12px;
   
